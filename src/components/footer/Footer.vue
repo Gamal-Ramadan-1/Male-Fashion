@@ -2,15 +2,15 @@
   <footer>
     <div class="container">
       <div class="row text-light py-5">
-        <div class="col-lg-3 col-md-4 col-sm-12">
+        <div class="col-lg-4 col-md-4 col-sm-12">
           <img src="../../imgs/xfooter-logo.png.pagespeed.ic.itW_wULNzW.webp" />
-          <p class="my-4 text-white-50">
+          <p class="my-4 text-white-50 w-75">
             The customer is at the heart of our unique business model, which
             includes design.
           </p>
           <img src="../../imgs/xpayment.png.pagespeed.ic.baCZTAO1zx.webp" />
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
+        <div class="col-lg-2 col-md-4 col-sm-12">
           <div class="shoping">
             <p class="text-uppercase fw-bold">shoping</p>
             <span class="text-white-50 text-capitalize mt-4"
@@ -36,7 +36,14 @@
             >
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-12"></div>
+        <div class="col-lg-3 col-md-4 col-sm-12">
+          <p class="text-uppercase fw-bold">newletter</p>
+          <p class="text-white-50">
+            Be the first to know about new arrivals, look books, sales & promos!
+          </p>
+          <input type="text" class="w-100 letter" placeholder="your email" />
+          <hr class="w-100" />
+        </div>
       </div>
     </div>
   </footer>
@@ -54,5 +61,16 @@ footer {
 .shoping span {
   cursor: pointer;
   display: block;
+}
+.letter {
+  padding: 6px;
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+  color: white;
+}
+hr {
+  height: 2px;
+  background-color: white;
 }
 </style>
