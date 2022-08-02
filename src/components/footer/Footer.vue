@@ -2,17 +2,20 @@
   <footer>
     <div class="container">
       <div class="row text-light py-5 gy-4">
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-4 col-sm-12">
           <img src="../../imgs/xfooter-logo.png.pagespeed.ic.itW_wULNzW.webp" />
           <p class="my-4 text-white-50">
             The customer is at the heart of our unique business model, which
             includes design.
           </p>
-          <img src="../../imgs/xpayment.png.pagespeed.ic.baCZTAO1zx.webp" alt="">
+          <img
+            src="../../imgs/xpayment.png.pagespeed.ic.baCZTAO1zx.webp"
+            alt=""
+          />
         </div>
-        <div class="col-lg-3"></div>
-        <div class="col-lg-3"></div>
-        <div class="col-lg-3"></div>
+        <div class="col-lg-3 col-md-4 col-sm-12"></div>
+        <div class="col-lg-3 col-md-4 col-sm-12"></div>
+        <div class="col-lg-3 col-md-4 col-sm-12"></div>
       </div>
     </div>
   </footer>
