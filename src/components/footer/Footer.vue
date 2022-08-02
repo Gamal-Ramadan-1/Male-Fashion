@@ -46,6 +46,21 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <hr />
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="text-white-50">
+            Copyright © 20222020 All rights reserved | This template is made
+            with
+            <span class="text-danger">
+              <i class="fa-solid fa-heart h6"></i>
+            </span>
+            by <span class="text-danger"> Colorlib</span>
+          </p>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 <script>
