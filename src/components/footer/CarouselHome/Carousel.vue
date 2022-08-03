@@ -103,6 +103,7 @@ export default {
   background-size: cover;
   clear: both;
   height: 100vh;
+  background-position: 55% 50%;
 }
 .hero-img-1 {
   background-image: url("../../../imgs/hero-1.jpg.webp");
