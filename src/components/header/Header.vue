@@ -45,7 +45,7 @@
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="../../imgs/download.webp" />
