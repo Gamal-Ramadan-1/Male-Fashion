@@ -25,6 +25,18 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-5 bannar-item">
+          <div class="bannar-img">
+            <img src="../../imgs/xbanner-2.jpg.pagespeed.ic.ISE4yV86cs.webp" />
+            <h1 class="text-capitalize">accessories</h1>
+            <p class="text-uppercase show-now position-relative">
+              <span class="position-absolute"> shop now </span>
+            </p>
+          </div>
+          <div class="bannar-text h-100">
+            <div></div>
+          </div>
+        </div>
         
       </div>
     </div>
@@ -62,4 +74,6 @@ export default {
   transition: all 0.5s ease-in-out;
   background-color: $Socend-color;
 }
+
+
 </style>
