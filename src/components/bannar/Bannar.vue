@@ -37,7 +37,31 @@
             <div></div>
           </div>
         </div>
-        
+        <div class="col-lg-7 bannar-item px-2">
+          <div class="bannar-img">
+            <img src="../../imgs/xbanner-3.jpg.pagespeed.ic.DPyiCAUR1d.webp" class="img-in-bannar-item-3" />
+          </div>
+          <div
+            class="
+              bannar-text
+              d-flex
+              justify-content-center
+              align-items-center
+              pt-5
+              mt-5
+              h-100
+            "
+          >
+            <div>
+              <h1 class="text-capitalize">
+                shoes spring<span class="d-block"> 2030 </span>
+              </h1>
+              <p class="text-uppercase show-now position-relative">
+                <span class="position-absolute "> shop now </span>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -75,5 +99,9 @@ export default {
   background-color: $Socend-color;
 }
 
+.img-in-bannar-item-3{
+margin-top: 70px;
+margin-right: 20px;
+}
 
 </style>
