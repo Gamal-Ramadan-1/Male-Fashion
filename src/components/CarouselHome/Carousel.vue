@@ -96,7 +96,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "../../../Scss/main.scss";
+@import "../../Scss/main.scss";
 
 .hero-img-1,
 .hero-img-2 {
@@ -106,10 +106,10 @@ export default {
   background-position: 55% 50%;
 }
 .hero-img-1 {
-  background-image: url("../../../imgs/hero-1.jpg.webp");
+  background-image: url("../../imgs/hero-1.jpg.webp");
 }
 .hero-img-2 {
-  background-image: url("../../../imgs/hero-2.jpg.webp");
+  background-image: url("../../imgs/hero-2.jpg.webp");
 }
 
 .carousel-control-prev,

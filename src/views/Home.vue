@@ -3,7 +3,7 @@
   <Bannar />
 </template>
 <script>
-import Carousel from "@/components/footer/CarouselHome/Carousel.vue";
+import Carousel from "@/components/CarouselHome/Carousel.vue";
 import Bannar from "../components/bannar/Bannar.vue";
 export default {
   name: "Home",
