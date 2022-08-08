@@ -2,7 +2,7 @@
   <div class="bannar py-5">
     <div class="container">
       <div class="row large-screen">
-        <div class="col-lg-7 offset-lg-5 bannar-item first-item">
+        <div class="col-lg-7 offset-lg-3 bannar-item first-item">
           <div class="bannar-img">
             <img src="../../imgs/xbanner-1.jpg.pagespeed.ic.KmE-rIc0aQ.webp" />
           </div>
