@@ -1,66 +1,81 @@
 <template>
-  <div class="bannar py-5 my-5">
+  <div class="bannar py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-7 offset-lg-4 bannar-item">
+      <div class="row large-screen">
+        <div class="col-lg-7 offset-lg-5 bannar-item first-item">
           <div class="bannar-img">
             <img src="../../imgs/xbanner-1.jpg.pagespeed.ic.KmE-rIc0aQ.webp" />
           </div>
-          <div
-            class="
-              bannar-text
-              d-flex
-              justify-content-center
-              align-items-center
-              h-100
-            "
-          >
+          <div class="bannar-text">
             <div>
               <h1 class="text-capitalize">
-                clothing <span class="d-block"> collections 2030 </span>
+                clothing <span> collections 2030 </span>
               </h1>
-              <p class="text-uppercase show-now position-relative">
-                <span class="position-absolute"> shop now </span>
+              <p class="text-uppercase show-now-link">
+                <a href="#"> shop now </a>
               </p>
             </div>
           </div>
         </div>
         <div class="col-lg-5 bannar-item">
           <div class="bannar-img">
-            <img src="../../imgs/xbanner-2.jpg.pagespeed.ic.ISE4yV86cs.webp" />
+            <img
+              src="../../imgs/xbanner-2.jpg.pagespeed.ic.ISE4yV86cs.webp"
+              class="p-0"
+            />
+
             <h1 class="text-capitalize">accessories</h1>
-            <p class="text-uppercase show-now position-relative">
-              <span class="position-absolute"> shop now </span>
+            <p class="text-uppercase position-relative show-now-link">
+              <a href="#" class="position-absolute"> shop now </a>
             </p>
           </div>
-          <div class="bannar-text h-100">
-            <div></div>
-          </div>
         </div>
-        <div class="col-lg-7 bannar-item px-2">
+        <div class="col-lg-7 bannar-item">
           <div class="bannar-img">
-            <img src="../../imgs/xbanner-3.jpg.pagespeed.ic.DPyiCAUR1d.webp" class="img-in-bannar-item-3" />
+            <img
+              src="../../imgs/xbanner-3.jpg.pagespeed.ic.DPyiCAUR1d.webp"
+              class="py-5"
+            />
           </div>
-          <div
-            class="
-              bannar-text
-              d-flex
-              justify-content-center
-              align-items-center
-              pt-5
-              mt-5
-              h-100
-            "
-          >
+          <div class="bannar-text py-5">
             <div>
-              <h1 class="text-capitalize">
-                shoes spring<span class="d-block"> 2030 </span>
+              <h1 class="text-capitalize mx-5">
+                shose spring <span class="d-block"> 2030 </span>
               </h1>
-              <p class="text-uppercase show-now position-relative">
-                <span class="position-absolute "> shop now </span>
+              <p class="text-uppercase position-relative show-now-link mx-5">
+                <a href="#" class="position-absolute"> shop now </a>
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row small-screen gy-4">
+        <div class="col-12 item-bannar-in-small-screen">
+          <img src="../../imgs/xbanner-1.jpg.pagespeed.ic.KmE-rIc0aQ.webp" />
+          <h1 class="text-capitalize">clothing collections</h1>
+          <p class="text-uppercase position-relative show-now-link">
+            <a href="#" class="position-absolute"> shop now </a>
+          </p>
+        </div>
+        <div class="col-12 item-bannar-in-small-screen">
+          <img
+            src="../../imgs/xbanner-2.jpg.pagespeed.ic.ISE4yV86cs.webp"
+            class="img-fluid"
+          />
+          <h1 class="text-capitalize">accessories</h1>
+          <p class="text-uppercase position-relative show-now-link">
+            <a href="#" class="position-absolute"> shop now </a>
+          </p>
+        </div>
+        <div class="col-12 item-bannar-in-small-screen">
+          <img
+            src="../../imgs/xbanner-3.jpg.pagespeed.ic.DPyiCAUR1d.webp"
+            class="img-fluid"
+          />
+          <h1 class="text-capitalize">shose spring 2030</h1>
+          <p class="text-uppercase position-relative show-now-link">
+            <a href="#" class="position-absolute"> shop now </a>
+          </p>
         </div>
       </div>
     </div>
@@ -74,34 +89,68 @@ export default {
 <style lang="scss" scoped>
 @import "../../Scss/main.scss";
 
+.bannar-item {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.first-item {
+  padding: 0px 0.5rem;
+  margin-top: 0px;
+}
+
 .bannar-img {
   float: right;
+  img {
+    padding: 0px 3rem;
+  }
 }
 .bannar-text {
-  float: left;
+  position: absolute;
+  top: 150px;
+  left: 60px;
 }
-.show-now {
-  cursor: pointer;
+
+.bannar-text {
+  p {
+    position: relative;
+  }
+  span {
+    display: block;
+  }
 }
-.show-now span::before {
+
+.show-now-link a {
+  text-decoration: none;
+  position: absolute;
+  color: $Main-color;
+}
+
+.show-now-link a::after {
   content: "";
   position: absolute;
   bottom: 0px;
+  left: 0px;
   width: 100%;
-  height: 2px;
-  transition: all 0.5s ease-in-out;
-  background-color: $Main-color;
+  transition: all 0.3s ease-in-out;
+  height: 1px;
+  background-color: black;
 }
 
-.bannar-item:hover .show-now span::before {
+.bannar-item:hover a::after,
+.item-bannar-in-small-screen:hover a::after {
   width: 50%;
-  transition: all 0.5s ease-in-out;
   background-color: $Socend-color;
+  transition: all 0.3s ease-in-out;
 }
-
-.img-in-bannar-item-3{
-margin-top: 70px;
-margin-right: 20px;
+@media (min-width: 720px) {
+  .small-screen {
+    display: none;
+  }
 }
-
+@media (max-width: 720px) {
+  .large-screen {
+    display: none;
+  }
+}
 </style>
