@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="row box-list gy-4 mb-5">
-        <div class="col-lg-3 col-md-6 col-sm-12 mix">
+        <div class="col-lg-3 col-md-6 col-sm-12 mix new-arrivals">
           <div class="box-item">
             <div class="card-content">
               <div class="card-img-1">
@@ -61,7 +61,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mix">
+        <div class="col-lg-3 col-md-6 col-sm-12 mix hot-sales">
           <div class="box-item">
             <div class="card-content">
               <div class="card-img-2">
@@ -99,7 +99,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mix">
+        <div class="col-lg-3 col-md-6 col-sm-12 mix new-arrivals">
           <div class="box-item">
             <div class="card-content">
               <div class="card-img-3">
@@ -138,7 +138,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mix">
+        <div class="col-lg-3 col-md-6 col-sm-12 mix hot-sales">
           <div class="box-item">
             <div class="card-content">
               <div class="card-img-4">
@@ -176,7 +176,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mix">
+        <div class="col-lg-3 col-md-6 col-sm-12 mix new-arrivals">
           <div class="box-item">
             <div class="card-content">
               <div class="card-img-5">
@@ -214,7 +214,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mix">
+        <div class="col-lg-3 col-md-6 col-sm-12 mix hot-sales">
           <div class="box-item">
             <div class="card-content">
               <div class="card-img-6">
@@ -253,7 +253,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mix">
+        <div class="col-lg-3 col-md-6 col-sm-12 mix new-arrivals">
           <div class="box-item">
             <div class="card-content">
               <div class="card-img-7">
@@ -291,7 +291,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mix">
+        <div class="col-lg-3 col-md-6 col-sm-12 mix hot-sales">
           <div class="box-item">
             <div class="card-content">
               <div class="card-img-8">
