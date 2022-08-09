@@ -6,17 +6,29 @@
           <h3
             class="d-inline-block px-lg-5 mixitup-control-active"
             data-filter="*"
+            id="best"
+            @click="BestSellersColor()"
           >
             best sellers
           </h3>
         </div>
         <div class="col-lg-4 text-center">
-          <h3 class="d-inline-block px-lg-5" data-filter=".new-arrivals">
+          <h3
+            class="d-inline-block px-lg-5"
+            data-filter=".new-arrivals"
+            id="new"
+            @click="NewArrivalsColor()"
+          >
             new arrivals
           </h3>
         </div>
         <div class="col-lg-4 text-start">
-          <h3 class="d-inline-block px-lg-5" data-filter=".hot-sales">
+          <h3
+            class="d-inline-block px-lg-5"
+            data-filter=".hot-sales"
+            id="hot"
+            @click="HotSalesColor()"
+          >
             hot sales
           </h3>
         </div>
@@ -336,8 +348,33 @@
 <script>
 export default {
   name: "Product",
+  methods: {
+    BestSellersColor: function () {
+      let BestSellers = document.getElementById("best");
+      let NewArrivals = document.getElementById("new");
+      let HotSales = document.getElementById("hot");
+      BestSellers.style.color = "gray";
+      NewArrivals.style.color = "black";
+      HotSales.style.color = "black";
+    },
+    NewArrivalsColor: function () {
+      let BestSellers = document.getElementById("best");
+      let NewArrivals = document.getElementById("new");
+      let HotSales = document.getElementById("hot");
+      NewArrivals.style.color = "gray";
+      BestSellers.style.color = "black";
+      HotSales.style.color = "black";
+    },
+    HotSalesColor: function () {
+      let BestSellers = document.getElementById("best");
+      let NewArrivals = document.getElementById("new");
+      let HotSales = document.getElementById("hot");
+      HotSales.style.color = "gray";
+      BestSellers.style.color = "black";
+      NewArrivals.style.color = "black";
+    },
+  },
 };
-
 $(document).ready(function () {
   var mixer = mixitup(".box-list");
 });
