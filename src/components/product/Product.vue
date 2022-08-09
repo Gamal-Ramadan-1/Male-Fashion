@@ -1,8 +1,8 @@
 <template>
   <section class="product">
     <div class="container">
-      <div class="row box-menu text-capitalize py-4">
-        <div class="col-lg-4 text-end">
+      <div class="row box-menu text-capitalize py-4 flex-nowrap">
+        <div class="col text-lg-end">
           <h3
             class="d-inline-block px-lg-5 mixitup-control-active"
             data-filter="*"
@@ -12,7 +12,7 @@
             best sellers
           </h3>
         </div>
-        <div class="col-lg-4 text-center">
+        <div class="col text-lg-center">
           <h3
             class="d-inline-block px-lg-5"
             data-filter=".new-arrivals"
@@ -22,7 +22,7 @@
             new arrivals
           </h3>
         </div>
-        <div class="col-lg-4 text-start">
+        <div class="col text-lg-start">
           <h3
             class="d-inline-block px-lg-5"
             data-filter=".hot-sales"
