@@ -31,15 +31,16 @@
           </div>
           <div class="row">
             <div class="timer d-flex align-items-center">
-              <h1  class="d-inline-block"></h1>
+              <h1 data-days class="d-inline-block"></h1>
               <h3 class="d-inline-block mx-4">:</h3>
-              <h1  class="d-inline-block"></h1>
-              <h3 class="d-inline-block mx-4">:</h3>
-
-              <h1  class="d-inline-block"></h1>
+              <h1 data-hours class="d-inline-block"></h1>
               <h3 class="d-inline-block mx-4">:</h3>
 
-              <h1  class="d-inline-block"></h1>
+              <h1 data-minutes class="d-inline-block"></h1>
+              <span class="seconds"></span>
+              <h3 class="d-inline-block mx-4">:</h3>
+
+              <h1 data-seconds class="d-inline-block"></h1>
             </div>
             <div class="d-flex align-items-center text-capitalize pt-3">
               <p class="mx-2 d-block">days</p>
@@ -59,10 +60,20 @@
   </section>
 </template>
 <script>
+import timezz from "timezz";
 export default {
   name: "Categories",
 };
-
+$(document).ready(function () {
+  timezz(document.querySelector(".timer"), {
+    date: "sep 10, 2022 00:00:00",
+    stopOnZero: false,
+    update(event) {
+      document.querySelector(".timer").querySelector(".seconds").innerHTML =
+        event.seconds === 1 ? "" : "";
+    },
+  });
+});
 </script>
 
 <style lang="scss" scoped>
@@ -126,3 +137,14 @@ export default {
 }
 
 </style>
+<!-- 
+<div class="timer1">
+            Days
+            <div data-days></div>
+            Hours
+            <div data-hours></div>
+            Minutes
+            <div data-minutes></div>
+            <span class="seconds">Seconds</span>
+            <div data-seconds></div>
+          </div> -->
