@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row gy-5">
         <div class="col-lg-3 col-md-12 col-sm-12">
-          <div class="offset-2 our-categories-names">
+          <div class="our-categories-names">
             <h2 class="clothings-hot fw-normal py-3">Clothings Hot</h2>
             <h2 class="shoe-collection">Shoe Collection</h2>
             <h2 class="accessories fw-normal py-3">Accessories</h2>
