@@ -12,8 +12,15 @@
             <div class="col-lg-4 col-md-6 col-sm-8 instagram-img-6"></div>
           </div>
         </div>
-        <div class="col-lg-5">
-          <div class="instagram-text"></div>
+        <div class="col-lg-5 d-flex justify-content-center align-items-center">
+          <div class="instagram-text mx-lg-4 m-0 text-capitalize">
+            <h1 class="my-5">instagram</h1>
+            <p class="w-75 my-5 text-black-75">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+              animi assumenda libero quo amet consectetur
+            </p>
+            <h2 class="hashtag-our-web mt-5">#mail_Fashion</h2>
+          </div>
         </div>
       </div>
     </div>
@@ -76,5 +83,8 @@ export default {
     height: 270px;
     background-position: bottom;
   }
+}
+.hashtag-our-web {
+  color: $Socend-color;
 }
 </style>
