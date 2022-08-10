@@ -12,14 +12,18 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-6"></div>
+        <div class="col-lg-4 col-md-6">
+          <CardBlog />
+        </div>
       </div>
     </div>
   </section>
 </template>
 <script>
+import CardBlog from "../Card-Blog/Card-Blog.vue";
 export default {
   name: "Latest-News",
+  components: { CardBlog },
 };
 </script>
 
