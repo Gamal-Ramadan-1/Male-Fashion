@@ -11,7 +11,8 @@
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 mt-1">
           <div class="categories-hot-deal">
-            <img class="img-fluid"
+            <img
+              class="img-fluid"
               src="../../imgs/xproduct-sale.png.pagespeed.ic.n2J8U5DKGJ.png"
             />
             <div class="steckar p-3 text-capitalize">
@@ -20,7 +21,39 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-md-12 col-sm-12"></div>
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <div class="row deal-of-the-week justify-content-center">
+            <span class="text-uppercase w-lg-75 my-3">deal of the week</span>
+            <h1 class="mb-5">
+              Multi-pocket Chest
+              <span class="text-dark d-lg-block"> Bag Black </span>
+            </h1>
+          </div>
+          <div class="row">
+            <div class="timer d-flex align-items-center">
+              <h1  class="d-inline-block"></h1>
+              <h3 class="d-inline-block mx-4">:</h3>
+              <h1  class="d-inline-block"></h1>
+              <h3 class="d-inline-block mx-4">:</h3>
+
+              <h1  class="d-inline-block"></h1>
+              <h3 class="d-inline-block mx-4">:</h3>
+
+              <h1  class="d-inline-block"></h1>
+            </div>
+            <div class="d-flex align-items-center text-capitalize pt-3">
+              <p class="mx-2 d-block">days</p>
+              <p class="mx-5 d-block">hours</p>
+              <p class="mx-1 d-block">minutes</p>
+              <p class="mx-4 d-block">seconds</p>
+            </div>
+          </div>
+          <div class="row shop-now-btn justify-content-around">
+            <div class="w-lg-75 my-5">
+              <div class="btn text-uppercase py-3 px-5">shop now</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -29,6 +62,7 @@
 export default {
   name: "Categories",
 };
+
 </script>
 
 <style lang="scss" scoped>
@@ -72,6 +106,22 @@ export default {
     text-align: center;
     top: -36px;
     right: 100px;
+  }
+}
+
+.deal-of-the-week {
+  span {
+    color: $Socend-color;
+    word-spacing: 5px;
+    font-weight: 600;
+  }
+}
+.shop-now-btn {
+  .btn {
+    background-color: $Main-color;
+    color: #f3f2ee;
+    font-size: 15px;
+    font-weight: 600;
   }
 }
 
