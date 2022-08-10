@@ -1,5 +1,5 @@
 <template>
-  <div class="bannar py-5">
+  <div class="bannar">
     <div class="container">
       <div class="row large-screen">
         <div class="col-lg-7 offset-lg-3 bannar-item first-item">
@@ -34,7 +34,7 @@
           <div class="bannar-img">
             <img
               src="../../imgs/xbanner-3.jpg.pagespeed.ic.DPyiCAUR1d.webp"
-              class="py-5"
+              class="py-5 my-5"
             />
           </div>
           <div class="bannar-text py-5">
@@ -89,9 +89,12 @@ export default {
 <style lang="scss" scoped>
 @import "../../Scss/main.scss";
 
+.bannar{
+  margin-top: 100px;
+}
+
 .bannar-item {
   position: relative;
-  margin-bottom: 100px;
 }
 
 .first-item {

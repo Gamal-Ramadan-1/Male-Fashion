@@ -81,8 +81,7 @@ $(document).ready(function () {
 .categories {
   padding-top: 180px;
   padding-bottom: 180px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
   background-color: #f3f2ee;
   overflow: hidden;
 }
