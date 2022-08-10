@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-md-12 col-sm-12">
+        <div class="col-lg-5 col-md-12 col-sm-12 m-0">
           <div class="row deal-of-the-week justify-content-center">
             <span class="text-uppercase w-lg-75 my-3">deal of the week</span>
             <h1 class="mb-5">
@@ -43,14 +43,14 @@
               <h1 data-seconds class="d-inline-block"></h1>
             </div>
             <div class="d-flex align-items-center text-capitalize pt-3">
-              <p class="mx-2 d-block">days</p>
-              <p class="mx-5 d-block">hours</p>
-              <p class="mx-1 d-block">minutes</p>
-              <p class="mx-4 d-block">seconds</p>
+              <p class="mx-lg-2 mx-0 d-block">days</p>
+              <p class="mx-lg-5 mx-5 d-block">hours</p>
+              <p class="mx-lg-2 mx-0 d-block">minutes</p>
+              <p class="mx-lg-4 mx-4 d-block">seconds</p>
             </div>
           </div>
           <div class="row shop-now-btn justify-content-around">
-            <div class="w-lg-75 my-5">
+            <div class="w-lg-75 mt-5">
               <div class="btn text-uppercase py-3 px-5">shop now</div>
             </div>
           </div>
@@ -135,7 +135,6 @@ $(document).ready(function () {
     font-weight: 600;
   }
 }
-
 </style>
 <!-- 
 <div class="timer1">
