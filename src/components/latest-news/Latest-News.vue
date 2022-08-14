@@ -26,7 +26,13 @@
             HeadOfCard="What Curling Irons Are The Best Ones"
           />
         </div>
-        
+        <div class="col-lg-4 col-md-6">
+          <BlogCard
+            src="imgs/blog-3.jpg.webp"
+            date="16 february 2022"
+            HeadOfCard="What Curling Irons Are The Best Ones"
+          />
+        </div>
       </div>
     </div>
   </section>
