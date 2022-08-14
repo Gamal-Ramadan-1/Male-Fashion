@@ -38,7 +38,6 @@
           <div class="box-item">
             <div class="card-content">
               <div class="card-img-1">
-                <h6 class="text-capitalize px-3">new</h6>
                 <div class="content-hover-in-box text-end">
                   <a href="#" class="d-block">
                     <i class="fa-solid fa-heart h4 p-2 mx-3 mt-4"></i>
@@ -346,8 +345,11 @@
   </section>
 </template>
 <script>
+import ShopCard from "@/components/Shop-Card/ShopCard.vue";
 export default {
   name: "Product",
+  components: { ShopCard },
+
   methods: {
     BestSellersColor: function () {
       let BestSellers = document.getElementById("best");
