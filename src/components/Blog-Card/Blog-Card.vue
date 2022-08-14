@@ -6,7 +6,7 @@
         <i class="fa-solid fa-book-open"></i>
         {{ date }}
       </p>
-      <h5>{{ HeadOfCard }}</h5>
+      <h5 class="w-75">{{ HeadOfCard }}</h5>
       <a href="#"><span class="text-uppercase">read more</span></a>
     </div>
   </div>
@@ -29,10 +29,12 @@ export default {
     margin: 0px 30px;
     padding: 20px;
     height: 200px;
+    transition: all 0.4s ease-in-out;
+
     margin-top: -50px;
     position: relative;
     width: 85%;
-    p{
+    p {
       font-size: 15px;
     }
     a {
@@ -55,6 +57,9 @@ export default {
 }
 .blog-item:hover {
   .item-text {
+    box-shadow: 2px 2px 15px rgb(206, 202, 202);
+    transition: all 0.4s ease-in-out;
+
     a {
       span::before {
         width: 50%;

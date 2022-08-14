@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-7 col-md-12">
-          <div class="instagram-imgs row mb-2 gy-md-0 g-5">
+          <div class="instagram-imgs row mb-2 gy-md-0 g-5 mx-2">
             <div class="col-lg-4 col-md-6 col-sm-8 instagram-img-1"></div>
             <div class="col-lg-4 col-md-6 col-sm-8 instagram-img-2"></div>
             <div class="col-lg-4 col-md-6 col-sm-8 instagram-img-3"></div>

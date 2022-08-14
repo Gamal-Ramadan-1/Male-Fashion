@@ -22,15 +22,15 @@
         <div class="col-lg-4 col-md-6">
           <BlogCard
             src="imgs/blog-2.jpg.webp"
-            date="16 february 2022"
-            HeadOfCard="What Curling Irons Are The Best Ones"
+            date=" 21 February 2020"
+            HeadOfCard="Eternity Bands Do Last Forever"
           />
         </div>
         <div class="col-lg-4 col-md-6">
           <BlogCard
             src="imgs/blog-3.jpg.webp"
-            date="16 february 2022"
-            HeadOfCard="What Curling Irons Are The Best Ones"
+            date=" 28 February 2020"
+            HeadOfCard="The Health Benefits Of Sunglasses"
           />
         </div>
       </div>
