@@ -9,7 +9,6 @@
               ><span class="text-dark mx-1">Home </span></router-link
             >
             <router-view />
-
             <span class="text-capitalize"> > shop </span>
           </p>
         </div>
