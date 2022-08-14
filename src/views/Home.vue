@@ -16,6 +16,7 @@ import LatestNews from "@/components/latest-news/Latest-News.vue";
 export default {
   name: "Home",
   components: { Carousel, Bannar, Categories, Product, Instagram, LatestNews },
+  
 };
 </script>
 

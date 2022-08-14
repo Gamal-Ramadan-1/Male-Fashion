@@ -11,19 +11,24 @@
           <h1 class="text-center text-capitalize">fashion new trends</h1>
         </div>
       </div>
-      <div class="row">
+      <div class="row my-5">
         <div class="col-lg-4 col-md-6">
-          <CardBlog />
+          <BlogCard
+            src="imgs/blog-1.jpg.webp"
+            date="16 february 2022"
+            HeadOfCard="What Curling Irons Are The Best Ones"
+          />
         </div>
+        
       </div>
     </div>
   </section>
 </template>
 <script>
-import CardBlog from "../Card-Blog/Card-Blog.vue";
+import BlogCard from "../Blog-Card/Blog-Card.vue";
 export default {
   name: "Latest-News",
-  components: { CardBlog },
+  components: { BlogCard },
 };
 </script>
 
