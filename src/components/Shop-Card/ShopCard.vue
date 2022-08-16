@@ -3,7 +3,7 @@
     <div class="card-content">
       <div class="card-img">
         <img :src="require(`@/${src}`)" class="w-100 h-100" />
-        <h6 class="text-capitalize px-3">new</h6>
+        <h6 :class="background + ' ' + color">{{ status }}</h6>
         <div class="content-hover-in-box text-end">
           <a href="#" class="d-block">
             <i class="fa-solid fa-heart h4 p-2 mx-3 mt-4"></i>
@@ -41,7 +41,14 @@
 <script>
 export default {
   name: "ShopCard",
-  props: { src: String, NameCard: String, price: String },
+  props: {
+    src: String,
+    NameCard: String,
+    price: String,
+    background: String,
+    color: String,
+    status: String,
+  },
 };
 </script>
 
@@ -69,6 +76,9 @@ a {
     position: absolute;
     background-color: white;
     left: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: capitalize;
   }
 }
 

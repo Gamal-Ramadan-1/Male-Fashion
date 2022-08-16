@@ -199,22 +199,70 @@
               >
                 <div class="accordion-body">
                   <div>
-                    <a href="#" class="d-inline-block m-2 py-1 px-2"> PRODUCT </a>
+                    <a href="#" class="d-inline-block m-2 py-1 px-2">
+                      PRODUCT
+                    </a>
                     <a href="#" class="d-inline-block m-2 py-1 px-2"> BAGS </a>
                   </div>
                   <div>
                     <a href="#" class="d-inline-block m-2 py-1 px-2"> SHOES </a>
-                    <a href="#" class="d-inline-block m-2 py-1 px-2"> FASHIO </a>
+                    <a href="#" class="d-inline-block m-2 py-1 px-2">
+                      FASHIO
+                    </a>
                   </div>
                   <div>
-                    <a href="#" class="d-inline-block m-2 py-1 px-2"> CLOTHING </a>
+                    <a href="#" class="d-inline-block m-2 py-1 px-2">
+                      CLOTHING
+                    </a>
                     <a href="#" class="d-inline-block m-2 py-1 px-2"> HATS </a>
                   </div>
                   <div>
-                    <a href="#" class="d-inline-block m-2 py-1 px-2"> ACCESSORIES </a>
+                    <a href="#" class="d-inline-block m-2 py-1 px-2">
+                      ACCESSORIES
+                    </a>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-12">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <p class="mt-2">Showing 1–12 of 126 results</p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div
+                class="
+                  sort-by-price
+                  d-flex
+                  justify-content-lg-end justify-content-start
+                  align-items-center
+                "
+              >
+                <label class="text-capitalize">sort by price :</label>
+                <select class="form-select text-capitalize">
+                  <option>low to high</option>
+                  <option>$0-$55</option>
+                  <option>$55-$100</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row gy-5 py-5">
+            <div
+              v-for="info in infocard"
+              :key="info.id"
+              class="col-lg-4 col-md-6 col-sm-12"
+            >
+                <ShopCard
+                  :src="info.SrcImg"
+                  :NameCard="info.TitleCard"
+                  :price="info.Price"
+                  :background="info.BackgroundColor"
+                  :color="info.color"
+                  :status="info.status"
+                />
             </div>
           </div>
         </div>
@@ -223,8 +271,100 @@
   </section>
 </template>
 <script>
+import ShopCard from "../Shop-Card/ShopCard.vue";
 export default {
   name: "ShopContent",
+  components: { ShopCard },
+  computed: {
+    infocard() {
+      return [
+        {
+          id: 1,
+          SrcImg: "imgs/product-1.jpg.webp",
+          TitleCard: "Piqué Biker Jacket",
+          Price: "$67.24",
+        },
+        {
+          id: 2,
+          SrcImg: "imgs/product-2.jpg.webp",
+          TitleCard: "Multi-pocket Chest Bag",
+          Price: "$43.48",
+          BackgroundColor: "bg-dark",
+          status: "sale",
+          color: "text-light",
+        },
+        {
+          id: 3,
+          SrcImg: "imgs/product-3.jpg.webp",
+          TitleCard: "Diagonal Textured Cap",
+          Price: "$60.9",
+        },
+        {
+          id: 4,
+          SrcImg: "imgs/product-4.jpg.webp",
+          TitleCard: "Ankle Boots",
+          Price: "$49.66",
+          BackgroundColor: "bg-light",
+          status: "new",
+          color: "text-dark",
+        },
+        {
+          id: 5,
+          SrcImg: "imgs/product-5.jpg.webp",
+          TitleCard: "Basic Flowing Scarf",
+          Price: "$26.28",
+        },
+        {
+          id: 6,
+          SrcImg: "imgs/product-6.jpg.webp",
+          TitleCard: "Piqué Biker Jacket",
+          Price: "$67.24",
+        },
+        {
+          id: 7,
+          SrcImg: "imgs/product-7.jpg.webp",
+          TitleCard: "Multi-pocket Chest Bag",
+          Price: "$43.48",
+        },
+        {
+          id: 8,
+          SrcImg: "imgs/product-8.jpg.webp",
+          TitleCard: "Diagonal Textured Cap",
+          Price: "$60.9",
+        },
+        {
+          id: 9,
+          SrcImg: "imgs/product-9.jpg.webp",
+          TitleCard: "Ankle Boots",
+          Price: "$49.66",
+          BackgroundColor: "bg-dark",
+          status: "sale",
+          color: "text-light",
+        },
+        {
+          id: 10,
+          SrcImg: "imgs/product-10.jpg.webp",
+          TitleCard: "Basic Flowing Scarf",
+          Price: "$26.28",
+        },
+        {
+          id: 11,
+          SrcImg: "imgs/product-11.jpg.webp",
+          TitleCard: "T-shirt Contrast Pocke",
+          Price: "$49.66",
+          BackgroundColor: "bg-light",
+          status: "new",
+          color: "text-dark",
+        },
+        {
+          id: 12,
+          SrcImg: "imgs/product-12.jpg.webp",
+          TitleCard: "Diagonal Textured Cap",
+          Price: "$30.90",
+        },
+      ];
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -327,6 +467,27 @@ a {
     background-color: black;
     color: white;
     transition: all 0.2s ease-in-out;
+  }
+}
+
+#prices {
+  border-style: none;
+  font-weight: bold;
+}
+
+.sort-by-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  select {
+    border-style: none;
+    text-align: center;
+    width: 30%;
+    option {
+      color: $Main-color;
+      background-color: #f1f5f8;
+    }
   }
 }
 </style>
