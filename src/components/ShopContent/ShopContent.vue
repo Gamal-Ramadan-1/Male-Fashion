@@ -255,14 +255,33 @@
               :key="info.id"
               class="col-lg-4 col-md-6 col-sm-12"
             >
-                <ShopCard
-                  :src="info.SrcImg"
-                  :NameCard="info.TitleCard"
-                  :price="info.Price"
-                  :background="info.BackgroundColor"
-                  :color="info.color"
-                  :status="info.status"
-                />
+              <ShopCard
+                :src="info.SrcImg"
+                :NameCard="info.TitleCard"
+                :price="info.Price"
+                :background="info.BackgroundColor"
+                :color="info.color"
+                :status="info.status"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-12 d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="btn-toolbar"
+                role="toolbar"
+                aria-label="Toolbar with button groups"
+              >
+                <div class="group">
+                  <button class="btn mx-2 main-button">1</button>
+                  <button class="btn mx-2">2</button>
+                  <button class="btn mx-2">3</button>
+                  <span class="mx-2">...</span>
+                  <button class="btn mx-2">20</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -488,6 +507,25 @@ a {
       color: $Main-color;
       background-color: #f1f5f8;
     }
+  }
+}
+
+.group {
+  margin-bottom: 100px;
+  .main-button {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+  .btn {
+    border-radius: 50%;
+
+    transition: all 0.3s ease-in-out;
+  }
+  .btn:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
   }
 }
 </style>
