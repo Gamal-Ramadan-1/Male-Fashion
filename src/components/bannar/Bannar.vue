@@ -11,9 +11,9 @@
               <h1 class="text-capitalize">
                 clothing <span> collections 2030 </span>
               </h1>
-              <p class="text-uppercase show-now-link">
-                <a href="#"> shop now </a>
-              </p>
+              <a href="#" class="position-relative text-capitalize shop-now">
+                show now
+              </a>
             </div>
           </div>
         </div>
@@ -25,9 +25,9 @@
             />
 
             <h1 class="text-capitalize">accessories</h1>
-            <p class="text-uppercase position-relative show-now-link">
-              <a href="#" class="position-absolute"> shop now </a>
-            </p>
+            <a href="#" class="position-relative text-capitalize shop-now">
+              show now
+            </a>
           </div>
         </div>
         <div class="col-lg-7 bannar-item">
@@ -42,40 +42,45 @@
               <h1 class="text-capitalize mx-5">
                 shose spring <span class="d-block"> 2030 </span>
               </h1>
-              <p class="text-uppercase position-relative show-now-link mx-5">
-                <a href="#" class="position-absolute"> shop now </a>
-              </p>
+              <a href="#" class="position-relative text-capitalize shop-now">
+                show now
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="row small-screen gy-4">
-        <div class="col-12 item-bannar-in-small-screen">
-          <img src="../../imgs/xbanner-1.jpg.pagespeed.ic.KmE-rIc0aQ.webp" />
-          <h1 class="text-capitalize">clothing collections</h1>
-          <p class="text-uppercase position-relative show-now-link">
-            <a href="#" class="position-absolute"> shop now </a>
-          </p>
-        </div>
-        <div class="col-12 item-bannar-in-small-screen">
-          <img
-            src="../../imgs/xbanner-2.jpg.pagespeed.ic.ISE4yV86cs.webp"
-            class="img-fluid"
-          />
-          <h1 class="text-capitalize">accessories</h1>
-          <p class="text-uppercase position-relative show-now-link">
-            <a href="#" class="position-absolute"> shop now </a>
-          </p>
-        </div>
-        <div class="col-12 item-bannar-in-small-screen">
-          <img
-            src="../../imgs/xbanner-3.jpg.pagespeed.ic.DPyiCAUR1d.webp"
-            class="img-fluid"
-          />
-          <h1 class="text-capitalize">shose spring 2030</h1>
-          <p class="text-uppercase position-relative show-now-link">
-            <a href="#" class="position-absolute"> shop now </a>
-          </p>
+      <div class="row gy-5">
+        <div class="small-screen">
+          <div class="col item-bannar-in-small-screen mb-3">
+            <img
+              src="../../imgs/xbanner-1.jpg.pagespeed.ic.KmE-rIc0aQ.webp"
+              class="w-md-100"
+            />
+            <h1 class="text-capitalize">clothing collections</h1>
+            <a href="#" class="position-relative text-capitalize shop-now">
+              show now
+            </a>
+          </div>
+          <div class="col item-bannar-in-small-screen mb-3">
+            <img
+              src="../../imgs/xbanner-2.jpg.pagespeed.ic.ISE4yV86cs.webp"
+              class="w-md-100"
+            />
+            <h1 class="text-capitalize">accessories</h1>
+            <a href="#" class="position-relative text-capitalize shop-now">
+              show now
+            </a>
+          </div>
+          <div class="col item-bannar-in-small-screen">
+            <img
+              src="../../imgs/xbanner-3.jpg.pagespeed.ic.DPyiCAUR1d.webp"
+              class="w-md-100"
+            />
+            <h1 class="text-capitalize">shose spring 2030</h1>
+            <a href="#" class="position-relative text-capitalize shop-now">
+              show now
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -89,7 +94,12 @@ export default {
 <style lang="scss" scoped>
 @import "../../Scss/main.scss";
 
-.bannar{
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.bannar {
   margin-top: 100px;
 }
 
@@ -123,21 +133,11 @@ export default {
   }
 }
 
-.show-now-link a {
-  text-decoration: none;
-  position: absolute;
-  color: $Main-color;
-}
-
-.show-now-link a::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-  height: 1px;
-  background-color: black;
+.item-bannar-in-small-screen {
+  text-align: center;
+  img {
+    width: 75%;
+  }
 }
 
 .bannar-item:hover a::after,
@@ -146,14 +146,36 @@ export default {
   background-color: $Socend-color;
   transition: all 0.3s ease-in-out;
 }
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   .small-screen {
     display: none;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 769px) {
   .large-screen {
     display: none;
   }
+  .small-screen {
+    display: inline-block;
+  }
+}
+@media (max-width: 1025px) {
+  .large-screen {
+    display: none;
+  }
+  .small-screen {
+    display: inline-block;
+  }
+}
+
+.shop-now::after {
+  position: absolute;
+  content: "";
+  // top: 20px;
+  bottom: -3px;
+  left: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: $Main-color;
 }
 </style>
