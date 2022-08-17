@@ -19,27 +19,33 @@
   </div>
   <div class="Free-shipping">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <p class="text-light text-capitalize m-0 py-2">
             Free shipping, 30-day return or refund guarantee.
           </p>
         </div>
-        <div class="col-lg-6 d-flex justify-content-end align-items-center">
-          <a href="#" class="text-uppercase text-light px-3">sgin in</a>
-          <a href="#" class="text-uppercase text-light px-3 mr-5">faqs</a>
-          <div class="links-bar">
-            <a href="#" class="text-light text-uppercase mx-3 usd-link"
-              >usd
-              <i class="fa-solid fa-arrow-down text-light mx-2"></i>
-            </a>
-            <ul
-              class="text-dark text-uppercase px-3 text-center usd-links mx-2"
-            >
-              <li><a href="#" class="text-black"> usd</a></li>
-              <li><a href="#" class="text-black"> eur</a></li>
-              <li><a href="#" class="text-black"> usd</a></li>
-            </ul>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div
+            class="
+              d-flex
+              justify-content-lg-end justify-content-center
+              align-items-center
+            "
+          >
+            <a href="#" class="text-uppercase text-light px-3">sgin in</a>
+            <a href="#" class="text-uppercase text-light px-3 mr-5">faqs</a>
+            <div class="links-bar">
+              <a href="#" class="text-light text-uppercase mx-3 usd-link"
+                >usd
+                <i class="fa-solid fa-arrow-down text-light mx-2"></i>
+              </a>
+              <ul class="text-dark text-uppercase px-3 text-center usd-links">
+                <li><a href="#" class="text-black"> usd</a></li>
+                <li><a href="#" class="text-black"> eur</a></li>
+                <li><a href="#" class="text-black"> usd</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
