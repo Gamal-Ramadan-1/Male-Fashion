@@ -112,6 +112,7 @@
 </template>
 <script>
 import ShopCard from "@/components/Shop-Card/ShopCard.vue";
+import mixitup from "mixitup";
 export default {
   name: "Product",
   components: { ShopCard },
@@ -161,6 +162,4 @@ a {
 .box-item {
   transition: all 0.3s;
 }
-
-
 </style>

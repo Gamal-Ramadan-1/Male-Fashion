@@ -1,7 +1,7 @@
 <template>
   <div class="bannar">
     <div class="container">
-      <div class="row large-screen">
+      <div class="row large-screen mb-5">
         <div class="col-lg-7 offset-lg-3 bannar-item first-item">
           <div class="bannar-img">
             <img src="../../imgs/xbanner-1.jpg.pagespeed.ic.KmE-rIc0aQ.webp" />
@@ -138,6 +138,10 @@ a {
   img {
     width: 75%;
   }
+}
+
+.bannar-item a::after {
+  transition: all 0.3s ease-in-out;
 }
 
 .bannar-item:hover a::after,

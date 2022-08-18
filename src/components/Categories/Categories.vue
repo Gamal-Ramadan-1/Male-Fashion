@@ -64,15 +64,16 @@ import timezz from "timezz";
 export default {
   name: "Categories",
 };
-window.onload = function () {
+
+$(document).ready(function () {
   timezz(document.querySelector("#timer"), {
-    date: "sep 10, 2022 00:00:00",
+    date: "nov 20, 2022 00:00:00",
     update(event) {
       document.querySelector("#timer").querySelector("#seconds").innerHTML =
         event.seconds === 1 ? "" : "";
     },
   });
-};
+});
 </script>
 
 <style lang="scss" scoped>
