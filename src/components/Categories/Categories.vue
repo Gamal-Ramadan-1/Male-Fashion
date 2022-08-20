@@ -2,14 +2,22 @@
   <section class="categories">
     <div class="container">
       <div class="row gy-5">
-        <div class="col-lg-3 col-md-12 col-sm-12">
+        <div
+          class="col-lg-3 col-md-12 col-sm-12"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div class="our-categories-names">
             <h2 class="clothings-hot fw-normal py-3">Clothings Hot</h2>
             <h2 class="shoe-collection">Shoe Collection</h2>
             <h2 class="accessories fw-normal py-3">Accessories</h2>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 mt-1">
+        <div
+          class="col-lg-4 col-md-12 col-sm-12 mt-1"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="categories-hot-deal">
             <img
               class="img-fluid"
@@ -21,7 +29,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-md-12 col-sm-12 m-0">
+        <div
+          class="col-lg-5 col-md-12 col-sm-12 m-0"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <div class="row deal-of-the-week justify-content-center">
             <span class="text-uppercase w-lg-75 my-3">deal of the week</span>
             <h1 class="mb-5">
@@ -76,16 +88,6 @@ export default {
     });
   },
 };
-
-// timezz(document.querySelector("#timer"), {
-//         date: "nov 20, 2022 00:00:00",
-//         update(event) {
-//           document.querySelector("#timer").querySelector("#seconds").innerHTML =
-//             event.seconds === 1 ? "" : "";
-//         },
-//       });
-
-//  $(document).ready(function () {});
 </script>
 
 <style lang="scss" scoped>
