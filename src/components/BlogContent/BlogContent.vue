@@ -6,6 +6,8 @@
           v-for="info in InfosBlogCard"
           :key="info.id"
           class="col-lg-4 col-md-6 col-sm-12"
+          data-aos="fade-left"
+          data-aos-duration="1500"
         >
           <BlogCard
             :src="info.Src"
