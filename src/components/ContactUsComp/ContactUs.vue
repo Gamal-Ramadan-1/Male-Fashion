@@ -1,6 +1,6 @@
 <template>
   <section class="form-contact-us">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1500">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 text-contact-us">
           <span class="d-block information text-uppercase fw-bold">
