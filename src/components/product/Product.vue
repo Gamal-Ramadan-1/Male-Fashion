@@ -113,10 +113,15 @@
 <script>
 import ShopCard from "@/components/Shop-Card/ShopCard.vue";
 import mixitup from "mixitup";
+import { onMounted } from "@vue/runtime-core";
 export default {
   name: "Product",
   components: { ShopCard },
-
+  setup() {
+    onMounted(() => {
+      var mixer = mixitup(".box-list");
+    });
+  },
   methods: {
     BestSellersColor: function () {
       let BestSellers = document.getElementById("best");
@@ -144,9 +149,6 @@ export default {
     },
   },
 };
-$(document).ready(function () {
-  var mixer = mixitup(".box-list");
-});
 </script>
 <style lang="scss" scoped>
 @import "../../Scss/main.scss";

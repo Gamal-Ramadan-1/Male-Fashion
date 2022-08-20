@@ -37,7 +37,7 @@
               <h3 class="d-inline-block mx-4">:</h3>
 
               <h1 data-minutes class="d-inline-block"></h1>
-              <span id="seconds"></span>
+              <span class="seconds"></span>
               <h3 class="d-inline-block mx-4">:</h3>
 
               <h1 data-seconds class="d-inline-block"></h1>
@@ -61,19 +61,31 @@
 </template>
 <script>
 import timezz from "timezz";
+import { onMounted } from "vue";
 export default {
   name: "Categories",
+  setup() {
+    onMounted(() => {
+      timezz(document.getElementById("timer"), {
+        date: "nov 20, 2022 00:00:00",
+        update(event) {
+          document.getElementById("timer").querySelector(".seconds").innerHTML =
+            event.seconds === 1 ? "" : "";
+        },
+      });
+    });
+  },
 };
 
-$(document).ready(function () {
-  timezz(document.querySelector("#timer"), {
-    date: "nov 20, 2022 00:00:00",
-    update(event) {
-      document.querySelector("#timer").querySelector("#seconds").innerHTML =
-        event.seconds === 1 ? "" : "";
-    },
-  });
-});
+// timezz(document.querySelector("#timer"), {
+//         date: "nov 20, 2022 00:00:00",
+//         update(event) {
+//           document.querySelector("#timer").querySelector("#seconds").innerHTML =
+//             event.seconds === 1 ? "" : "";
+//         },
+//       });
+
+//  $(document).ready(function () {});
 </script>
 
 <style lang="scss" scoped>

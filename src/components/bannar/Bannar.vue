@@ -2,7 +2,11 @@
   <div class="bannar">
     <div class="container">
       <div class="row large-screen mb-5">
-        <div class="col-lg-7 offset-lg-3 bannar-item first-item">
+        <div
+          class="col-lg-7 offset-lg-3 bannar-item first-item"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div class="bannar-img">
             <img src="../../imgs/xbanner-1.jpg.pagespeed.ic.KmE-rIc0aQ.webp" />
           </div>
@@ -17,7 +21,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 bannar-item">
+        <div
+          class="col-lg-5 bannar-item"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <div class="bannar-img">
             <img
               src="../../imgs/xbanner-2.jpg.pagespeed.ic.ISE4yV86cs.webp"
@@ -30,7 +38,11 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-7 bannar-item">
+        <div
+          class="col-lg-7 bannar-item"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <div class="bannar-img">
             <img
               src="../../imgs/xbanner-3.jpg.pagespeed.ic.DPyiCAUR1d.webp"
