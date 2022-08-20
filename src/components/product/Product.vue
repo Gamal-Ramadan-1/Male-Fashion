@@ -33,9 +33,9 @@
           </h3>
         </div>
       </div>
-      <div class="row box-list gy-4 mb-5">
+      <div class="row box-list gy-4 mb-5" data-aos="fade-up">
         <div class="col-lg-3 col-md-6 col-sm-12 mix new-arrivals">
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-left" data-aos-duration="1500">
             <ShopCard
               src="imgs/product-1.jpg.webp"
               NameCard="pique biker jacket"
@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mix hot-sales">
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-left" data-aos-duration="1500">
             <ShopCard
               src="imgs/product-2.jpg.webp"
               NameCard="pique biker jacket"
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mix new-arrivals">
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-right" data-aos-duration="1500">
             <ShopCard
               src="imgs/product-3.jpg.webp"
               NameCard="multi-pocket chest bag"
@@ -62,7 +62,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mix hot-sales">
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-right" data-aos-duration="1500">
             <ShopCard
               src="imgs/product-4.jpg.webp"
               NameCard="Diagonal Textured Cap"
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mix new-arrivals">
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-left" data-aos-duration="1500">
             <ShopCard
               src="imgs/product-5.jpg.webp"
               NameCard="Lether Backpack"
@@ -80,7 +80,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mix hot-sales">
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-left" data-aos-duration="1500">
             <ShopCard
               src="imgs/product-6.jpg.webp"
               NameCard="Ankle Boots"
@@ -89,7 +89,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mix new-arrivals">
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-right" data-aos-duration="1500">
             <ShopCard
               src="imgs/product-7.jpg.webp"
               NameCard="T-shirt Contrast Pocket"
@@ -98,7 +98,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mix hot-sales">
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-right" data-aos-duration="1500">
             <ShopCard
               src="imgs/product-8.jpg.webp"
               NameCard="Basic Flowing Scarf"
