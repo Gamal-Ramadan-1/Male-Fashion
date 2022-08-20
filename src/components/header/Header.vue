@@ -157,6 +157,8 @@ export default {
       let OpenLayout = document.getElementById("layout");
       OpenLayout.style.display = "inline-block";
     },
+  },
+  computed: {
     IncrisedLoves: function () {
       this.CountLoves++;
 
