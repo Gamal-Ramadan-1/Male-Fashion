@@ -1,6 +1,6 @@
 <template>
   <section class="latest-news">
-    <div class="container">
+    <div class="container" data-aos="fade-up"  data-aos-duration="1500">
       <div class="row">
         <div class="col-12">
           <p
@@ -12,21 +12,33 @@
         </div>
       </div>
       <div class="row my-5">
-        <div class="col-lg-4 col-md-6">
+        <div
+          class="col-lg-4 col-md-6"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <BlogCard
             src="imgs/blog-1.jpg.webp"
             date="16 february 2022"
             HeadOfCard="What Curling Irons Are The Best Ones"
           />
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div
+          class="col-lg-4 col-md-6"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <BlogCard
             src="imgs/blog-2.jpg.webp"
             date=" 21 February 2020"
             HeadOfCard="Eternity Bands Do Last Forever"
           />
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div
+          class="col-lg-4 col-md-6"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <BlogCard
             src="imgs/blog-3.jpg.webp"
             date=" 28 February 2020"
