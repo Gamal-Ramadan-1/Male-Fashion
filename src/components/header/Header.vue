@@ -86,20 +86,7 @@
               ></a
             >
           </li>
-          <li class="nav-item px-2">
-            <a class="nav-link text-dark fw-bold pages-link" href="#"
-              ><div class="position-relative pages">
-                <span>pages</span>
-                <ul class="p-0 dropdown position-absolute">
-                  <li class="text-light px-2 my-1">about us</li>
-                  <li class="text-light px-2 my-1">shop details</li>
-                  <li class="text-light px-2 my-1">shoping cart</li>
-                  <li class="text-light px-2 my-1">chick out</li>
-                  <li class="text-light px-2 my-1">blog details</li>
-                </ul>
-              </div>
-            </a>
-          </li>
+          
           <li class="nav-item px-2">
             <a class="nav-link fw-bold" href="#"
               ><router-link to="/blog"
