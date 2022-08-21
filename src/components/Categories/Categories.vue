@@ -49,7 +49,7 @@
               <h3 class="d-inline-block mx-4">:</h3>
 
               <h1 data-minutes class="d-inline-block"></h1>
-              <span class="seconds"></span>
+              <span id="seconds"></span>
               <h3 class="d-inline-block mx-4">:</h3>
 
               <h1 data-seconds class="d-inline-block"></h1>
@@ -81,8 +81,10 @@ export default {
       timezz(document.getElementById("timer"), {
         date: "nov 20, 2022 00:00:00",
         update(event) {
-          document.getElementById("timer").querySelector(".seconds").innerHTML =
-            event.seconds === 1 ? "" : "";
+          if (document.getElementById("seconds") !== null) {
+            document.getElementById("seconds").innerHTML =
+              event.seconds === 1 ? "" : "";
+          }
         },
       });
     });
