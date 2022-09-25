@@ -27,10 +27,18 @@
                     <i class="fa-solid fa-right-long text-light mx-2"></i>
                   </div>
                   <div class="carousel-social">
-                    <i class="fa-brands fa-facebook-f px-2"></i>
-                    <i class="fa-brands fa-twitter px-4"></i>
-                    <i class="fa-brands fa-pinterest px-2"></i>
-                    <i class="fa-brands fa-instagram px-4"></i>
+                    <a href="#" class="text-dark mx-2">
+                      <i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="text-dark mx-4">
+                      <i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a href="#" class="text-dark mx-2">
+                      <i class="fa-brands fa-pinterest"></i
+                    ></a>
+                    <a href="#" class="text-dark mx-4">
+                      <i class="fa-brands fa-instagram"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -60,10 +68,18 @@
                     <i class="fa-solid fa-right-long text-light mx-2"></i>
                   </div>
                   <div class="carousel-social">
-                    <i class="fa-brands fa-facebook-f px-2"></i>
-                    <i class="fa-brands fa-twitter px-4"></i>
-                    <i class="fa-brands fa-pinterest px-2"></i>
-                    <i class="fa-brands fa-instagram px-4"></i>
+                    <a href="#" class="text-dark mx-2">
+                      <i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="text-dark mx-4">
+                      <i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a href="#" class="text-dark mx-2">
+                      <i class="fa-brands fa-pinterest"></i
+                    ></a>
+                    <a href="#" class="text-dark mx-4">
+                      <i class="fa-brands fa-instagram"></i
+                    ></a>
                   </div>
                 </div>
               </div>

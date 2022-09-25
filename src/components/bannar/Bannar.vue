@@ -8,7 +8,7 @@
           data-aos-duration="1000"
         >
           <div class="bannar-img">
-            <img src="../../imgs/xbanner-1.jpg.pagespeed.ic.KmE-rIc0aQ.webp" />
+            <img src="@/imgs/xbanner-1.jpg.pagespeed.ic.KmE-rIc0aQ.webp" />
           </div>
           <div class="bannar-text">
             <div>
@@ -28,7 +28,7 @@
         >
           <div class="bannar-img">
             <img
-              src="../../imgs/xbanner-2.jpg.pagespeed.ic.ISE4yV86cs.webp"
+              src="@/imgs/xbanner-2.jpg.pagespeed.ic.ISE4yV86cs.webp"
               class="p-0"
             />
 
@@ -45,7 +45,7 @@
         >
           <div class="bannar-img">
             <img
-              src="../../imgs/xbanner-3.jpg.pagespeed.ic.DPyiCAUR1d.webp"
+              src="@/imgs/xbanner-3.jpg.pagespeed.ic.DPyiCAUR1d.webp"
               class="py-5 my-5"
             />
           </div>
