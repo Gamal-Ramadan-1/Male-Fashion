@@ -2,7 +2,7 @@
   <section class="shop-content">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-12" data-aos="fade-right"  data-aos-duration="1500">
+        <div class="col-lg-3 col-md-12" data-aos="zoom-in"  data-aos-duration="1500">
           <div class="input-group mb-3">
             <input
               class="form-control px-3"
@@ -262,7 +262,7 @@
                 :background="info.BackgroundColor"
                 :color="info.color"
                 :status="info.status"
-                data-aos="fade-left"
+                data-aos="zoom-in"
                 data-aos-duration="1500"
               ></ShopCard>
             </div>

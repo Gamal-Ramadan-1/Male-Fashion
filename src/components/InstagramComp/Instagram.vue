@@ -5,7 +5,7 @@
         <div class="col-lg-7 col-md-12">
           <div
             class="instagram-imgs row mb-2 gy-md-0 g-5 mx-2"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration="1000"
           >
             <div class="col-lg-4 col-md-6 col-sm-8 instagram-img-1"></div>
@@ -19,7 +19,7 @@
         <div class="col-lg-5 d-flex justify-content-center align-items-center">
           <div
             class="instagram-text mx-lg-4 m-0 text-capitalize"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="1000"
           >
             <h1 class="my-5">instagram</h1>

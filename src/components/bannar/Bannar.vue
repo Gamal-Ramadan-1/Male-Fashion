@@ -4,7 +4,7 @@
       <div class="row large-screen mb-5">
         <div
           class="col-lg-7 offset-lg-3 bannar-item first-item"
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-duration="1000"
         >
           <div class="bannar-img">
@@ -23,7 +23,7 @@
         </div>
         <div
           class="col-lg-5 bannar-item"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1500"
         >
           <div class="bannar-img">
@@ -40,7 +40,7 @@
         </div>
         <div
           class="col-lg-7 bannar-item"
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-duration="1500"
         >
           <div class="bannar-img">
