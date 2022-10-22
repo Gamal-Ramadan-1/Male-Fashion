@@ -65,16 +65,21 @@
   </section>
 </template>
 <script>
-$(document).ready(function () {
-  $(".success-username").hide();
-  $(".success-email").hide();
+import { onMounted } from "@vue/runtime-core";
 
-  $(".faild-email").hide();
-  $(".faild-username").hide();
-});
 export default {
   name: "ContactUs",
+  setup() {
+    onMounted(() => {
+      $(document).ready(function () {
+        $(".success-username").hide();
+        $(".success-email").hide();
 
+        $(".faild-email").hide();
+        $(".faild-username").hide();
+      });
+    });
+  },
   methods: {
     SendEmail() {
       if ($(".username").val() === " " || $(".username").val() === "") {
