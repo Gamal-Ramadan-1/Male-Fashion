@@ -56,7 +56,7 @@
             <span class="text-danger">
               <i class="fa-solid fa-heart h6"></i>
             </span>
-            by <span class="text-danger"> Colorlib</span>
+            by <span class="text-danger"> Gamal Ramadan</span>
           </p>
         </div>
       </div>
