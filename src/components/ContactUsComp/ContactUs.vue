@@ -27,27 +27,34 @@
             <div class="col-lg-6 col-md-12">
               <input
                 type="text"
-                class="w-100 py-2 px-3 mb-4 form-control"
+                class="w-100 py-2 px-3 form-control username"
                 placeholder="Name"
               />
+              <p class="success-username text-success m-0">Success..!</p>
+              <p class="faild-username text-danger m-0">This is requird...?</p>
             </div>
             <div class="col-lg-6 col-md-12">
               <input
                 type="text"
-                class="w-100 py-2 px-3 mb-4 form-control"
+                class="w-100 py-2 px-3 form-control email"
                 placeholder="Email"
               />
+              <p class="success-email text-success m-0">Success..!</p>
+              <p class="faild-email text-danger m-0">This is requird...?</p>
             </div>
             <div class="col-12">
               <textarea
                 name="Massege"
-                class="w-100 p-3 form-control"
+                class="w-100 p-3 form-control mt-3"
                 rows="6"
                 placeholder="Massage"
               ></textarea>
             </div>
             <div class="col-12">
-              <div class="btn btn-dark text-uppercase py-3 px-5 mt-5 fw-bold">
+              <div
+                class="btn btn-dark text-uppercase py-3 px-5 mt-5 fw-bold"
+                @click="SendEmail()"
+              >
                 send Massege
               </div>
             </div>
@@ -58,8 +65,34 @@
   </section>
 </template>
 <script>
+$(document).ready(function () {
+  $(".success-username").hide();
+  $(".success-email").hide();
+
+  $(".faild-email").hide();
+  $(".faild-username").hide();
+});
 export default {
   name: "ContactUs",
+
+  methods: {
+    SendEmail() {
+      if ($(".username").val() === " " || $(".username").val() === "") {
+        $(".success-username").hide("slow");
+        $(".faild-username").show("slow");
+      } else {
+        $(".faild-username").hide("slow");
+        $(".success-username").show("slow");
+      }
+      if ($(".email").val() === " " || $(".email").val() === "") {
+        $(".success-email").hide("slow");
+        $(".faild-email").show("slow");
+      } else {
+        $(".faild-email").hide("slow");
+        $(".success-email").show("slow");
+      }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
