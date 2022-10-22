@@ -86,7 +86,7 @@
               ></a
             >
           </li>
-          
+
           <li class="nav-item px-2">
             <a class="nav-link fw-bold" href="#"
               ><router-link to="/blog"
@@ -115,12 +115,12 @@
               id="heart-icon"
             ></i
           ></span>
+          <h6 class="fw-bold">
+            {{ CountLoves }} <span class="loves"> love</span>
+          </h6>
           <span class="text-dark"
             ><i class="fa-solid fa-note-sticky h4 px-2"></i
           ></span>
-          <h6 class="fw-bold">
-            {{ CountLoves }} <span class="text-danger">loves</span>
-          </h6>
         </div>
       </div>
     </div>
@@ -144,15 +144,20 @@ export default {
       let OpenLayout = document.getElementById("layout");
       OpenLayout.style.display = "inline-block";
     },
-  },
-  computed: {
     IncrisedLoves: function () {
-      this.CountLoves++;
-
-      let colored = document.getElementById("heart-icon");
-      colored.style.color = "red";
+      if (this.CountLoves >= 1) {
+        this.CountLoves--;
+        $("#heart-icon").css("color", "black");
+        $(".loves").css("color", "black");
+      } else {
+        this.CountLoves++;
+        $("#heart-icon").css("color", "red");
+        $(".loves").css("color", "red");
+      }
     },
   },
+
+  computed: {},
 };
 </script>
 <style lang="scss" scoped>
