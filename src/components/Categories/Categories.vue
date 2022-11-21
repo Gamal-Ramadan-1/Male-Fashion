@@ -79,7 +79,7 @@ export default {
   setup() {
     onMounted(() => {
       timezz(document.getElementById("timer"), {
-        date: "nov 20, 2022 00:00:00",
+        date: "march 01, 2023 00:00:00",
         update(event) {
           if (document.getElementById("seconds") !== null) {
             document.getElementById("seconds").innerHTML =
